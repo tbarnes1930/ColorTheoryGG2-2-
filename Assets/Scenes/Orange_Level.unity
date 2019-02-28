@@ -305,26 +305,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Octopus
       objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.0100666005
@@ -352,6 +332,26 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.069000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 599ea472c466f47d082ff3620dcd8263, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1777,6 +1777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
+  RespawnSource: {fileID: 974994987}
+  DeathNoise: {fileID: 8300000, guid: 93e28c8d55c7a4a1cba236c647e6bc63, type: 3}
+  RespawnVolume: 0.711
 --- !u!114 &974994985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1812,7 +1815,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7d632b6482fd74a4ab6c6eaa5749c522, type: 3}
+  m_audioClip: {fileID: 8300000, guid: be135e7b356d14d6084e0afb8c6805bc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
