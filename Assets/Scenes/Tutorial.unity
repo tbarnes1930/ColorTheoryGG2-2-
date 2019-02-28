@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2561,9 +2561,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fbc3b818d8d95408d9c36b5230ba6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 3.4
   yRotate: 100
+<<<<<<< HEAD
   jumpHeight: 250
+=======
+  jumpHeight: 298
+>>>>>>> 6f887cddef81cbc632f4637dbc2f568b7b0f233d
   rb: {fileID: 831255380}
   jumpCheck: 0
   switchSound: {fileID: 831255381}
@@ -2571,7 +2575,7 @@ MonoBehaviour:
   switchVolume: 0.5
   jumpSource: {fileID: 831255374}
   jumpSound: {fileID: 8300000, guid: 523237e7e2c974ac19b09f1cd662b2cc, type: 3}
-  jumpVolume: 1
+  jumpVolume: 0.92
   item: {fileID: 0}
   temParent: {fileID: 0}
   guide: {fileID: 0}
