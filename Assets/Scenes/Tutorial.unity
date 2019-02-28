@@ -2561,9 +2561,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fbc3b818d8d95408d9c36b5230ba6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3.8
+  moveSpeed: 3.4
   yRotate: 100
-  jumpHeight: 300
+  jumpHeight: 298
   rb: {fileID: 831255380}
   jumpCheck: 0
   switchSound: {fileID: 831255381}

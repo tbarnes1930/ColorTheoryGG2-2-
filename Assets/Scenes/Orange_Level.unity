@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   yRotate: 105
-  jumpHeight: 225
+  jumpHeight: 250
   rb: {fileID: 974994988}
   jumpCheck: 0
   switchSound: {fileID: 974994987}
