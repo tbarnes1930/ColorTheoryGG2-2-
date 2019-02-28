@@ -125,5 +125,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
   RespawnSource: {fileID: 0}
-  DeathNoise: {fileID: 0}
-  RespawnVolume: 0
+  DeathNoise: {fileID: 8300000, guid: 6ab6742cafc9f3044b77ee1870e99cbc, type: 3}
+  RespawnVolume: 1
