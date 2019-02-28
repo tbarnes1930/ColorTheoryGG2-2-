@@ -618,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 415ac867703c94fcaa82208d2fc2da4e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.09
+      value: -18.841
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 415ac867703c94fcaa82208d2fc2da4e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -922,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334366806}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.41083908, y: 4.36314, z: -3.9659078}
+  m_LocalPosition: {x: -0.41083908, y: 8.955669, z: -3.9659078}
   m_LocalScale: {x: 1.0330611, y: 1.0330611, z: 1.0330611}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1105,7 +1105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398145354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.12, y: 4.73657, z: -1.62}
+  m_LocalPosition: {x: -2.12, y: 9.3291, z: -1.62}
   m_LocalScale: {x: 1.0330611, y: 1.0330611, z: 1.0330611}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1736,7 +1736,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
+<<<<<<< HEAD
+  yRotate: 100
+=======
   yRotate: 105
+>>>>>>> 6f887cddef81cbc632f4637dbc2f568b7b0f233d
   jumpHeight: 250
   rb: {fileID: 974994988}
   jumpCheck: 0
@@ -2002,7 +2006,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984948014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.36, y: 1.842, z: -19.082}
+  m_LocalPosition: {x: -1.36, y: 1.842, z: -18.833}
   m_LocalScale: {x: 1.0770025, y: 0.02297454, z: 1.3980138}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3138,7 +3142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983980198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3366222, y: 3.9274714, z: -6.307028}
+  m_LocalPosition: {x: 1.3366222, y: 8.52, z: -6.307028}
   m_LocalScale: {x: 1.0330611, y: 1.0330611, z: 1.0330611}
   m_Children: []
   m_Father: {fileID: 0}
