@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347492141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000048711, y: 0, z: -0.000065617}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: 0.000060085, y: 0, z: -0.000080834}
+  m_LocalScale: {x: 0.32831562, y: 0.32831562, z: 0.32831562}
   m_Children:
   - {fileID: 7632136618014946514}
   - {fileID: 7632136618014946512}
@@ -86,6 +86,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0, z: 0}
+  RespawnSource: {fileID: 0}
+  DeathNoise: {fileID: 0}
+  RespawnVolume: 0
 --- !u!1 &7632136618015434976
 GameObject:
   m_ObjectHideFlags: 0

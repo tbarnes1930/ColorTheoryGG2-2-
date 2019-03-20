@@ -10,7 +10,9 @@ TagManager:
   - Goal
   - Checkpoint
   - Bounce
-  - Goal1
+  - Goal2
+  - Goal3
+  - Rain
   layers:
   - Default
   - TransparentFX

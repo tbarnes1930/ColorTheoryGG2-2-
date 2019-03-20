@@ -75,6 +75,17 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(0, (Time.deltaTime * yRotate), 0);
         }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(0, ((Time.deltaTime * yRotate) * -1), 0);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(0, (Time.deltaTime * yRotate), 0);
+        }
+
     }
 	
 	 void OnCollisionEnter(Collision collision)
