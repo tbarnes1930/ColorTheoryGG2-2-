@@ -13,8 +13,6 @@ TagManager:
   - Goal2
   - Goal3
   - Rain
-  - Orange
-  - Barrier
   layers:
   - Default
   - TransparentFX
