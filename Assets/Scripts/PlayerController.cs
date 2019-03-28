@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
     
 	 private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Orange")
         {
             jumpCheck = false;
             
