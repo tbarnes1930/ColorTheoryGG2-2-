@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     {
          jumpCheck = true;
          Cursor.visible = false;
-         item.GetComponent<Rigidbody>().useGravity = true;
+        
     }
 
     // Update is called once per frame
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if (Input.GetAxis("Mouse X") < 0)
+        /*if (Input.GetAxis("Mouse X") < 0)
         {
             transform.Rotate(0, ((Time.deltaTime * yRotate) * -1), 0);
         }
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Mouse X") > 0)
         {
             transform.Rotate(0, (Time.deltaTime * yRotate), 0);
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -96,12 +96,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (collision.gameObject.tag == "Bounce")
-        {
-            OnMouseDown();
-
-            OnMouseUp();
-        }
+     
 
     }
 
@@ -132,21 +127,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-     void OnMouseDown()
-     {
-         item.GetComponent<Rigidbody>().useGravity = false;
-         item.GetComponent<Rigidbody>().isKinematic = true;
-         item.transform.position = guide.transform.position;
-         item.transform.rotation = guide.transform.rotation;
-         item.transform.parent = temParent.transform;
-     }
-
-     void OnMouseUp()
-     {
-         item.GetComponent<Rigidbody>().useGravity = true;
-         item.GetComponent<Rigidbody>().isKinematic = false;
-         item.transform.parent = null;
-         item.transform.position = guide.transform.position;
-
-     }
+    
 }
