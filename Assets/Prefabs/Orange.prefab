@@ -128,7 +128,7 @@ MonoBehaviour:
   respawnPosition: {x: 0, y: 0, z: 0}
   RespawnSource: {fileID: 4075012024953078466}
   DeathNoise: {fileID: 8300000, guid: 2d04732bbd91d204d9d7f50f5d5928f2, type: 3}
-  RespawnVolume: 0.655
+  RespawnVolume: 1
 --- !u!114 &8209996337826027176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FloorSource: {fileID: 4075012024953078466}
   SoundOfContact: {fileID: 8300000, guid: 3fdc4a453ba884a439d8aa641361efab, type: 3}
-  FallVolume: 0.81
+  FallVolume: 1
 --- !u!82 &4075012024953078466
 AudioSource:
   m_ObjectHideFlags: 0
