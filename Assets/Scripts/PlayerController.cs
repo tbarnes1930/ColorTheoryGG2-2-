@@ -22,16 +22,11 @@ public class PlayerController : MonoBehaviour
 
     [Range(0.0f, 1.0f)]
     public float jumpVolume;
-
-    public GameObject item;
-    public GameObject temParent;
-    public Transform guide;
 	
     void Start()
     {
          jumpCheck = true;
          Cursor.visible = false;
-         item.GetComponent<Rigidbody>().useGravity = true;
     }
 
     // Update is called once per frame
@@ -90,17 +85,10 @@ public class PlayerController : MonoBehaviour
 	
 	 void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Orange")
         {
             jumpCheck = true;
 
-        }
-
-        if (collision.gameObject.tag == "Bounce")
-        {
-            OnMouseDown();
-
-            OnMouseUp();
         }
 
     }
@@ -132,21 +120,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-     void OnMouseDown()
-     {
-         item.GetComponent<Rigidbody>().useGravity = false;
-         item.GetComponent<Rigidbody>().isKinematic = true;
-         item.transform.position = guide.transform.position;
-         item.transform.rotation = guide.transform.rotation;
-         item.transform.parent = temParent.transform;
-     }
-
-     void OnMouseUp()
-     {
-         item.GetComponent<Rigidbody>().useGravity = true;
-         item.GetComponent<Rigidbody>().isKinematic = false;
-         item.transform.parent = null;
-         item.transform.position = guide.transform.position;
-
-     }
 }
