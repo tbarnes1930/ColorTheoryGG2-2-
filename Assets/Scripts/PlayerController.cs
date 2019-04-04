@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource switchSound;
     public AudioClip switchGrab;
 
+
     [Range(0.0f, 1.0f)]
     public float switchVolume;
 
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     }
 	
-	 void OnCollisionEnter(Collision collision)
+	 void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Orange")
         {
