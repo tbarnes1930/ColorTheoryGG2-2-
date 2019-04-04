@@ -12,10 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Orange_Level.unity
+    path: Assets/Scenes/Pipe_Level.unity
+    guid: c8b37f1da9164334d8c826e965ccd8d3
+  - enabled: 1
+    path: Assets/Scenes/Collectable_Level.unity
     guid: ffef925911f654242860760dab5f046c
   - enabled: 1
-    path: Assets/Scenes/Green_Level.unity
+    path: Assets/Scenes/Nature_Level.unity
     guid: 206bd0c3b2def4cdfa22cba2b242f028
   - enabled: 1
     path: Assets/Scenes/Win.unity

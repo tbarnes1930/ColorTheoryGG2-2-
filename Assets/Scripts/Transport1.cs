@@ -13,6 +13,6 @@ public class Transport1 : MonoBehaviour
     // Update is called once per frame
      private void OnTriggerEnter(Collider objectCollided)
     {
-           GetComponent<Transform>().position = new Vector3(-0.0323f, 0.1037f);
+           GetComponent<Transform>().position = new Vector3(-56f, 3.6f, 129.75f);
     }
 }
