@@ -15,7 +15,7 @@ public class Goal3 : MonoBehaviour
     private void OnTriggerEnter(Collider objectCollided)
         {
             if (objectCollided.gameObject.tag == "Goal3")
-                SceneManager.LoadScene("Win");
+                SceneManager.LoadScene("Nature_Level");
         }
 
     }

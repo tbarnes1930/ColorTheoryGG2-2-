@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 3
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 39404f6f7e453431985e5d3f1bb672cf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.3387224, g: 0, b: 0.4638341, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -625,7 +625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219784511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.628, y: 3.45, z: 26.734}
+  m_LocalPosition: {x: 24.628, y: 3.4, z: 26.734}
   m_LocalScale: {x: 0.93969, y: 0.93969, z: 0.93969}
   m_Children:
   - {fileID: 1013309412}
@@ -782,6 +782,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &256619773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256619771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9638297f42444403874e04f753d780f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &286628050
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,7 +4778,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.013808
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3327853931187072956, guid: 491c14cf60a6549d984dd1e0c73a7670,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 68b6aacd9601b4717b2d4c67d8aefbb1, type: 3}
+    - target: {fileID: 3327853931187072929, guid: 491c14cf60a6549d984dd1e0c73a7670,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327853931187072929, guid: 491c14cf60a6549d984dd1e0c73a7670,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 300
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3327853931187072930, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
 --- !u!1 &1190401237
 GameObject:
@@ -5181,22 +5209,22 @@ PrefabInstance:
     - target: {fileID: 293153530380564692, guid: cc41e1178946d44c2b574dc9875a748d,
         type: 3}
       propertyPath: m_TagString
-      value: Goal3
+      value: Goal4
       objectReference: {fileID: 0}
     - target: {fileID: 2271148579023805376, guid: cc41e1178946d44c2b574dc9875a748d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.13
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2271148579023805376, guid: cc41e1178946d44c2b574dc9875a748d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.96
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2271148579023805376, guid: cc41e1178946d44c2b574dc9875a748d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 89.806
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2271148579023805376, guid: cc41e1178946d44c2b574dc9875a748d,
         type: 3}
@@ -7231,6 +7259,24 @@ MonoBehaviour:
   RespawnSource: {fileID: 0}
   DeathNoise: {fileID: 0}
   RespawnVolume: 0
+--- !u!1 &1759610815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3327853930154741775, guid: 491c14cf60a6549d984dd1e0c73a7670,
+    type: 3}
+  m_PrefabInstance: {fileID: 1186917252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1759610826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759610815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9638297f42444403874e04f753d780f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1772561653
 PrefabInstance:
   m_ObjectHideFlags: 0

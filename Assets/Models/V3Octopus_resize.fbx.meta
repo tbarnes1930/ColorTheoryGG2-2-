@@ -1,14 +1,32 @@
 fileFormatVersion: 2
-guid: cd990d73c4dd142b1a3d1466a4d7643e
+guid: 574c166728aff4ffdb2623b1cb77de79
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Octopus
+    100002: pSphere1
+    100004: pSphere2
+    100006: pSphere3
+    100008: pTorus1
+    100010: transform1
+    100012: transform2
+    100014: transform3
+    100016: transform4
+    100018: //RootNode
+    400000: Octopus
+    400002: pSphere1
+    400004: pSphere2
+    400006: pSphere3
+    400008: pTorus1
+    400010: transform1
+    400012: transform2
+    400014: transform3
+    400016: transform4
+    400018: //RootNode
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube2
+    2300000: Octopus
+    3300000: Octopus
+    4300000: Octopus
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

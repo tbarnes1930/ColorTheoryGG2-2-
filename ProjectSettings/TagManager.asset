@@ -14,6 +14,9 @@ TagManager:
   - Goal3
   - Rain
   - Orange
+  - Key
+  - Door
+  - Goal4
   layers:
   - Default
   - TransparentFX
