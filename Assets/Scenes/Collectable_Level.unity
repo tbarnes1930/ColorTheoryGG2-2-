@@ -797,6 +797,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: be135e7b356d14d6084e0afb8c6805bc, type: 3}
+    - target: {fileID: 3327853931187072935, guid: 491c14cf60a6549d984dd1e0c73a7670,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: aad6488971c9044e5a3fac867078785f, type: 3}
     m_RemovedComponents:
     - {fileID: 3327853931187072932, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
     - {fileID: 3327853931187072930, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
@@ -18679,7 +18684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1497268149}
-  keySound: {fileID: 8300000, guid: aad6488971c9044e5a3fac867078785f, type: 3}
+  keySound: {fileID: 8300000, guid: b92d4cb50c2e86b48b81ffd40bc215ae, type: 3}
 --- !u!114 &1497268154
 MonoBehaviour:
   m_ObjectHideFlags: 0

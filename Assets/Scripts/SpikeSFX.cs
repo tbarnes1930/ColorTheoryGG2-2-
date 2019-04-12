@@ -9,7 +9,7 @@ public class SpikeSFX : MonoBehaviour
     void Start()
     {
         SpikeSource = GetComponent<AudioSource>();
-        SpikeSource.PlayDelayed(0.8f);
+        SpikeSource.PlayDelayed(2.1f);
     }
 
 
