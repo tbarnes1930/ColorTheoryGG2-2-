@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            moveSpeed = moveSpeed * 1.5f;
+            moveSpeed = moveSpeed * 2f;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))

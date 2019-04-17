@@ -939,7 +939,9 @@ MonoBehaviour:
 
     WASD - Movement.
 
-    Mouse/Trackpad - Control Camera.'
+    Mouse/Trackpad - Control Camera.
+
+    Left Shift - Sprint.'
 --- !u!222 &1306997308
 CanvasRenderer:
   m_ObjectHideFlags: 0
