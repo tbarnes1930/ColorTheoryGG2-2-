@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 39404f6f7e453431985e5d3f1bb672cf, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 89e0823eeefdd4f91a430e384f30b080, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.248285, g: 0, b: 0.34263688, a: 1}
+  m_IndirectSpecularColor: {r: 0.2594892, g: 0.00016685488, b: 0.45098567, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -792,16 +792,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3327853931187072935, guid: 491c14cf60a6549d984dd1e0c73a7670,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: aad6488971c9044e5a3fac867078785f, type: 3}
     - target: {fileID: 3327853931187072956, guid: 491c14cf60a6549d984dd1e0c73a7670,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: be135e7b356d14d6084e0afb8c6805bc, type: 3}
+    - target: {fileID: 3327853931187072935, guid: 491c14cf60a6549d984dd1e0c73a7670,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: aad6488971c9044e5a3fac867078785f, type: 3}
     m_RemovedComponents:
     - {fileID: 3327853931187072932, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
     - {fileID: 3327853931187072930, guid: 491c14cf60a6549d984dd1e0c73a7670, type: 3}
