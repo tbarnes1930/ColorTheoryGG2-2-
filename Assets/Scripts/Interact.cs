@@ -61,7 +61,7 @@ public class Interact : MonoBehaviour
 
             if (objFromRaycast.tag == "Door")
             {
-                if (PlayerInventory.keyCount >= keysNeeded)
+                if (PlayerInventory.keyCount == keysNeeded)
                 {
                     PlayerInventory.keyCount = 0;
                     SceneManager.LoadScene("Nature_Level");

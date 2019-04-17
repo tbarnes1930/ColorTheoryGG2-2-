@@ -12,15 +12,15 @@ public class PickUp : MonoBehaviour
         if (other.gameObject.tag == "Key")
         {
             audioSource.PlayOneShot(keySound);
-
+            
             PlayerInventory.keyCount++;
             print("I have " + PlayerInventory.keyCount + " key(s)!");
-
-            Destroy(other.gameObject);
-
+            
             other.gameObject.GetComponent<Renderer>().enabled = false;
-
+            
             other.gameObject.GetComponent<ParticleSystem>().Play();
+
+            other.gameObject.GetComponent<Collider>().enabled = false;
         }
     }
 }
