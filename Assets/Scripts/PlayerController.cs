@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
      public float moveSpeed;
+    public float startMove;
     public float yRotate;
     public float jumpHeight;
     public Rigidbody rb;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
          jumpCheck = true;
          Cursor.visible = false;
+        startMove = moveSpeed;
     }
 
     // Update is called once per frame
@@ -82,6 +84,15 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(0, (Time.deltaTime * yRotate), 0);
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = moveSpeed * 1.5f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = startMove;
+        }
     }
 	
 	 void OnCollisionStay(Collision collision)
