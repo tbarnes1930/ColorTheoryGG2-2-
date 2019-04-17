@@ -22,7 +22,7 @@ public class Interact : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hitInfo, rayLength, layerMask))
         {
 
-            ObjInteraction(curObj);
+            //ObjInteraction(curObj);
 
             if (curObj == null)
             {
@@ -54,22 +54,38 @@ public class Interact : MonoBehaviour
         curObj = null;
 
     }
-    void ObjInteraction(GameObject objFromRaycast)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+    //void ObjInteraction(GameObject objFromRaycast)
+    //{
+    //    if (Input.GetKeyDown(KeyCode.E))
+    //    {
+    //
+    //        if (objFromRaycast.tag == "Door")
+    //        {
+    //            if (PlayerInventory.keyCount >= keysNeeded)
+    //            {
+    //                PlayerInventory.keyCount = 0;
+    //                SceneManager.LoadScene("Nature_Level");
+    //            }
+    //            else
+    //            {
+    //                print("You need " + keysNeeded + " keys to open this door. Yet, you only have " + PlayerInventory.keyCount + " key(s). Find more!");
+    //            }
+    //        }
+    //    }
+    //}
 
-            if (objFromRaycast.tag == "Door")
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Goal3")
+        {
+            if (PlayerInventory.keyCount >= keysNeeded)
             {
-                if (PlayerInventory.keyCount >= keysNeeded)
-                {
-                    PlayerInventory.keyCount = 0;
-                    SceneManager.LoadScene("Nature_Level");
-                }
-                else
-                {
-                    print("You need " + keysNeeded + " keys to open this door. Yet, you only have " + PlayerInventory.keyCount + " key(s). Find more!");
-                }
+                PlayerInventory.keyCount = 0;
+                SceneManager.LoadScene("Nature_Level");
+            }
+            else
+            {
+                print("You need " + keysNeeded + " keys to open this door. Yet, you only have " + PlayerInventory.keyCount + " key(s). Find more!");
             }
         }
     }
