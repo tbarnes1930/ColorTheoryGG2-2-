@@ -5872,6 +5872,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 169.71738
       objectReference: {fileID: 0}
+    - target: {fileID: 7051029411531941356, guid: 723d5f9607caa4930aae25c0a7a9f764,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051029411531941356, guid: 723d5f9607caa4930aae25c0a7a9f764,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786329283291732923, guid: 723d5f9607caa4930aae25c0a7a9f764,
+        type: 3}
+      propertyPath: SpikeVolume
+      value: 0.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786329283291732923, guid: 723d5f9607caa4930aae25c0a7a9f764,
+        type: 3}
+      propertyPath: SpikeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6beb374be1afbe44ab3802fc939280a4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 723d5f9607caa4930aae25c0a7a9f764, type: 3}
 --- !u!1 &1480501175 stripped

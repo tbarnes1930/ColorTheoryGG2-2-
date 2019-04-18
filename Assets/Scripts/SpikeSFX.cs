@@ -8,12 +8,11 @@ public class SpikeSFX : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("RedRubyNoise", 1.0f, 2.8f);
+        InvokeRepeating("RedRubyNoise", 0.0001f, 3.0f);
         //SpikeSource = GetComponent<AudioSource>();
-        //SpikeSource.PlayDelayed(2.1f);
     }
 
-    void RedRudyNoise()
+    void RedRubyNoise()
     {
         SpikeSource.Play();
     }
