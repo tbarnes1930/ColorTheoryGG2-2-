@@ -1257,7 +1257,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press ESC to Restart back to Title screen.
+  m_Text: Press Backspace to Restart back to Title screen.
 --- !u!222 &2053075117
 CanvasRenderer:
   m_ObjectHideFlags: 0
