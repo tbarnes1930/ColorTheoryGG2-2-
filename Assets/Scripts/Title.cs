@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class Title : MonoBehaviour
 {
 
-
-    // Update is called once per frame
-    void Update()
+    public void StartGame()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            SceneManager.LoadScene("Tutorial");
-        }
+        SceneManager.LoadScene("Tutorial");
+    }
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
