@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void StartGame()
     {

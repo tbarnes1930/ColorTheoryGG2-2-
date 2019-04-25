@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class WinScript : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void ReturnMenu()
     {
         SceneManager.LoadScene("Title");
