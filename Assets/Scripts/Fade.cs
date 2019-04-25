@@ -10,11 +10,18 @@ public class Fade : MonoBehaviour
     public Image white;
     public Animator anim;
 
+    public AudioSource FadeSource;
+    public AudioClip transition;
+
+    [Range(0.0f, 1.0f)]
+    public float FadeVolume;
+
     private void OnTriggerEnter(Collider collision)
     {
        if (collision.tag == "Player")
         {
             collision.GetComponent<Rigidbody>().useGravity = false;
+            FadeSource.PlayOneShot(transition, FadeVolume);
             StartCoroutine(Fading());
         }
     }
