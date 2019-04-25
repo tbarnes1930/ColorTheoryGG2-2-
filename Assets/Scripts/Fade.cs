@@ -1,42 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
-    public float FadeRate;
-    private Image image;
-    private float targetAlpha;
-    // Use this for initialization
-    void Start()
-    {
-        this.image = this.GetComponent<Image>();
-        if (this.image == null)
-        {
-            Debug.LogError("Error: No image on " + this.name);
-        }
-        this.targetAlpha = this.image.color.a;
-    }
+    public int index;
 
-    // Update is called once per frame
-    void Update()
+    public Image white;
+    public Animator anim;
+
+    private void OnTriggerEnter(Collider collision)
     {
-        Color curColor = this.image.color;
-        float alphaDiff = Mathf.Abs(curColor.a - this.targetAlpha);
-        if (alphaDiff > 0.0001f)
+       if (collision.tag == "Player")
         {
-            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, this.FadeRate * Time.deltaTime);
-            this.image.color = curColor;
+            collision.GetComponent<Rigidbody>().useGravity = false;
+            StartCoroutine(Fading());
         }
     }
 
-    public void FadeOut()
-    {
-        this.targetAlpha = 0.0f;
-    }
+IEnumerator Fading()
 
-    public void FadeIn()
     {
-        this.targetAlpha = 1.0f;
+        Debug.Log("hello");
+        anim.SetBool("Fade", true);
+        yield return new WaitUntil(() => { return white.color.a == 1f; });
+        SceneManager.LoadScene(index);
     }
 }
