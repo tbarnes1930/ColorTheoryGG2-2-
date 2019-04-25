@@ -8,7 +8,7 @@ public class SpikeSFX : MonoBehaviour
     
     void Start()
     {
-        InvokeRepeating("RedRubyNoise", 0.0001f, 3.0f);
+        InvokeRepeating("RedRubyNoise", 0.01f, 3.0f);
         //SpikeSource = GetComponent<AudioSource>();
     }
 
