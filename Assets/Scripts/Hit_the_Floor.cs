@@ -16,7 +16,7 @@ public class Hit_the_Floor : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision orange)
+    private void OnCollisionStay(Collision orange)
     {
         if (orange.gameObject.tag == "Floor")
         {
