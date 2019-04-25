@@ -10,6 +10,8 @@ public class Hit_the_Floor : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float FallVolume;
 
+    public bool floorCheck;
+
     // Start is called before the first frame update
     void Start()
     {
