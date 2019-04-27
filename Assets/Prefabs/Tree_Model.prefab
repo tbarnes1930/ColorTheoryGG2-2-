@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634056242}
   - component: {fileID: 634056241}
+  - component: {fileID: 9081712317105802849}
   m_Layer: 0
   m_Name: Tree_Model
   m_TagString: Untagged
@@ -111,6 +112,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0037521794, y: 0.025140567, z: 0.0034935658}
   m_Center: {x: 0.000019620655, y: 0.012796026, z: -0.00004296463}
+--- !u!95 &9081712317105802849
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634056240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 595ceb9fe0dc5400ca4e3c5098d60868, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &707136495
 GameObject:
   m_ObjectHideFlags: 0
