@@ -13,6 +13,7 @@ public class Escape : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             SceneManager.LoadScene("Title");
+            Cursor.visible = true;
         }
     }
 }
